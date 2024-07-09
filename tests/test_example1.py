@@ -16,6 +16,7 @@ import pytest
 binary_yandex_driver_file = r'C:\yandex_driver\chromedriver.exe' # ПУТЬ К ДРАЙВЕРУ
 extension_path = r"C:\yandex_driver\1.2.13_0.crx" # Путь к директории расширения
 options = webdriver.ChromeOptions()
+options.add_argument('--headless')
 options.add_experimental_option('detach',True)
 options.add_extension(extension_path)
 options.add_argument('--enable-logging')
